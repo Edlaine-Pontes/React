@@ -97,3 +97,9 @@ a {
     background: #0000ff;
     color: #fff;       
 }
+
+.repo-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

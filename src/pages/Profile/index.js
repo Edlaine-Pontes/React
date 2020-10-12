@@ -77,7 +77,7 @@ export default function Profile(){
                                 </div>
                                 
                                 <div className="col-3">                                    
-                                    <p><a href={repo.link} target="_blank" rel="noopener noreferrer">{repo.link}</a></p>
+                                    <p className="repo-link"><a href={repo.link} target="_blank" rel="noopener noreferrer">{repo.link}</a></p>
                                     <p>{repo.date || '-'}</p>
                                     <p>{repo.forks || '-'}</p>
                                     <p>{repo.star || '-'}</p>
