@@ -1,3 +1,46 @@
+## APP PERFIL GITHUB
+
+<b>Url:<b>
+
+Você pode pesquisar o usuario e consultar informações gerais como:
+Numero de Seguidores;
+
+Quantidade de respositorios publicos;
+data de criação do perfil no gihtub;
+data de atualização do perfil;
+
+Atraves da listagem de repositorio é possivel consultar:
+
+    Link do repositório;
+    Data de criação;
+    Numero de forks;
+    Numero de estrelas (dadas por outros usuarios);
+    Ultima Atualização
+    Descrição;
+
+### Como utilizar a aplicação
+
+Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
+Ao encontrar o usuario sera exebido a pagina de profile, com informações gerais.
+A direira é exibido os repositorios publico, para consultar maiores informações do repositorio clique no botão R.
+
+Para retornar a tela de busca clique no botão disponivel no canto superior direito.
+
+
+### Tecnologia ###
+
+    - ReactJs
+
+ 
+
+
+
+
+    
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
