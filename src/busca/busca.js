@@ -8,7 +8,7 @@ const getUser = async function(user){
     try{
         const resp = await http.get(url)
         const repos = await http.get(resp.data.repos_url)
-        
+
        
         const reposDetails = []
 
@@ -30,18 +30,20 @@ const getUser = async function(user){
             update: resp.data.updated_at,
             repos: reposDetails
         }
-        
 
         return profile
     } catch(err){
         return null
     }
-
 }
 
 
-const getCommit = async function(){
-
+const getCommit = async function(url){
+    console.log('pega os commits');
+    console.log(url);
 }
 
-export default getUser
+export {
+    getUser,
+    getCommit,
+}

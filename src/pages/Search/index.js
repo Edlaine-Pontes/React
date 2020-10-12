@@ -1,20 +1,18 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import busca from '../../busca/busca'
+import { getUser } from '../../busca/busca'
 import './style.css'
 import github from '../../assets/gith.png'
 import logo from '../../assets/logo.png'
 
 export default function Search () {
-
     const [user, setUser] = useState('amaralmarti');
-    const [profile, setProfile] = useState('abc');
     const history = useHistory();
 
     async function pesquisar(e) {
         e.preventDefault();
         
-        const userResult = await busca(user);
+        const userResult = await getUser(user);
         
         if (userResult){
             localStorage.setItem('profile', JSON.stringify(userResult));

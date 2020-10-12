@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft} from 'react-icons/fi';
+import { getCommit } from '../../busca/busca'
 import './styles.css'
 import logo from '../../assets/logo.png'
 
@@ -11,17 +12,22 @@ export default function Profile(){
 
     const image = profile.image;
 
-    function handleLogout(){
+    function handleBack(){
         localStorage.clear();
         history.push('/')
+    }
+
+    function loadCommits(e) {
+        const commitsUrl = e.target.dataset.url
+        getCommit(commitsUrl)
     }
 
     return(
         <div className="profile-container">
 
             <header>
-            <img class="logo" src={logo}/>
-            <button onClick={handleLogout} type="button">
+            <img className="logo" src={logo}/>
+            <button onClick={handleBack} type="button">
                     <FiArrowLeft size={30} color="#0000ff" />
             </button>
             </header>
@@ -39,7 +45,7 @@ export default function Profile(){
              <ul>
                 {profile.repos.map(repo=>(
                 <li key={repo.name}>
-                <p>{repo.name}</p>
+                <p data-url={repo.commits} onClick={loadCommits}> {repo.name}</p>
                 <p>Descrição: {repo.description}</p>
                 <p>Commits: {repo.commits} </p> 
                 <p>Data: {repo.date}</p>   
