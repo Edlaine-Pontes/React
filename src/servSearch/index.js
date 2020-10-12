@@ -11,8 +11,7 @@ function formatDate(inputDate) {
 
 
 export default async function(user){
-    const url = `http://api.github.com/users/${user}`
-    
+    const url = `https://api.github.com/users/${user}`    
     
     try{
         const resp = await http.get(url)
