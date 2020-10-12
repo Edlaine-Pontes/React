@@ -1,3 +1,4 @@
+
 ## APP PERFIL GITHUB
 
 <b>Url:<b>
@@ -5,20 +6,20 @@
 <p>Você pode pesquisar o usuario e consultar informações gerais como:
 Numero de Seguidores;<p>
 
-<li>Quantidade de respositorios publicos;
-<li>data de criação do perfil no gihtub;
-<li>data de atualização do perfil;
+   ✔Quantidade de respositorios publicos;
+   ✔Data de criação do perfil no gihtub;
+   ✔Data de atualização do perfil;
 
-<p>Atraves da listagem de repositorio é possivel consultar:<p>
+<p>Através da listagem de repositorio é possivel consultar:<p>
 
-<li>Link do repositório;
-<li>Data de criação;
-<li>Numero de forks;
-<li>Numero de estrelas (dadas por outros usuarios);
-<li>Ultima Atualização
-<li>Descrição;
+   ✔Link do repositório;
+   ✔Data de criação;
+   ✔Numero de forks;
+   ✔Numero de estrelas (dadas por outros usuarios);
+   ✔Ultima Atualização
+   ✔Descrição;
 
-### Como utilizar a aplicação
+###  📚 Como utilizar a aplicação
 
 <p>Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
 Ao encontrar o usuario sera exebido a pagina de profile, com informações gerais.
@@ -27,18 +28,18 @@ A direira é exibido os repositorios publico, para consultar maiores informaçõ
 Retorne a tela de busca clicando no botão no canto superior direito.
 
 
-### Tecnologia ###
+### 🚀 Tecnologia ###
 
     - ReactJs
 
-### Como rodar a apĺicação
+### 👀 Como rodar a apĺicação
 
 1. clone o projeto
     git@github.com:Edlaine-Pontes/React.git
 
 
 
-### Contribuites ###
+### 💪 Contribuites ###
 
 Edlaine Pontes e muito café (acompanhado de algumas lagrimas)
 
