@@ -1,31 +1,31 @@
-
+<img src="./src/assets/logo.png" width="50%">
 ## APP PERFIL GITHUB
 
 <b>Url:<b>
 
-<p>Você pode pesquisar o usuario e consultar informações gerais como:
-Numero de Seguidores;<p>
+<p align="justify">Você pode pesquisar o usuario e consultar informações gerais como:
+Numero de Seguidores;<p><br>
 
-   ✔Quantidade de respositorios publicos;
-   ✔Data de criação do perfil no gihtub;
-   ✔Data de atualização do perfil;
+   ✔Quantidade de respositorios publicos;<br>
+   ✔Data de criação do perfil no gihtub;<br>
+   ✔Data de atualização do perfil;<br>
 
-<p>Através da listagem de repositorio é possivel consultar:<p>
+<p align="justify">Através da listagem de repositorio é possivel consultar:<p><br>
 
-   ✔Link do repositório;
-   ✔Data de criação;
-   ✔Numero de forks;
-   ✔Numero de estrelas (dadas por outros usuarios);
-   ✔Ultima Atualização
-   ✔Descrição;
+   ✔Link do repositório;<br>
+   ✔Data de criação;<br>
+   ✔Numero de forks;<br>
+   ✔Numero de estrelas (dadas por outros usuarios);<br>
+   ✔Ultima Atualização;<br>
+   ✔Descrição;<br>
 
 ###  📚 Como utilizar a aplicação
 
-<p>Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
-Ao encontrar o usuario sera exebido a pagina de profile, com informações gerais.
+<p align="justify">Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
+Ao encontrar o usuario sera exebido a pagina de profile, com informações gerais.<br>
 A direira é exibido os repositorios publico, para consultar maiores informações do repositorio clique no <bold>botão R.<bold><p>
 
-Retorne a tela de busca clicando no botão no canto superior direito.
+<p align="justify">Retorne a tela de busca clicando no botão no canto superior direito.<p>
 
 
 ### 🚀 Tecnologia ###
