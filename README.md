@@ -4,7 +4,7 @@
 # APP PERFIL GITHUB
 ______________________________________________
 
-<b>Url:<b> www.edlaine.gestao.tech 
+<b>Url:<b> https://edlaine.gestao.tech 
 
 <p align="justify">Você pode pesquisar o usuario e consultar informações gerais como:
 Numero de Seguidores;<p><br>
