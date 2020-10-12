@@ -9,20 +9,20 @@ Numero de Seguidores;<p>
 <li>data de criação do perfil no gihtub;
 <li>data de atualização do perfil;
 
-Atraves da listagem de repositorio é possivel consultar:
+<p>Atraves da listagem de repositorio é possivel consultar:<p>
 
-    Link do repositório;
-    Data de criação;
-    Numero de forks;
-    Numero de estrelas (dadas por outros usuarios);
-    Ultima Atualização
-    Descrição;
+<li>Link do repositório;
+<li>Data de criação;
+<li>Numero de forks;
+<li>Numero de estrelas (dadas por outros usuarios);
+<li>Ultima Atualização
+<li>Descrição;
 
 ### Como utilizar a aplicação
 
-Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
+<p>Informe o usuario que deseja consultar e clique em pesquisar, a aplicação informa se o usuario informado for invalido.
 Ao encontrar o usuario sera exebido a pagina de profile, com informações gerais.
-A direira é exibido os repositorios publico, para consultar maiores informações do repositorio clique no botão R.
+A direira é exibido os repositorios publico, para consultar maiores informações do repositorio clique no <bold>botão R.<bold><p>
 
 Retorne a tela de busca clicando no botão no canto superior direito.
 
