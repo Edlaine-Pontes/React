@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
-import { FiArrowLeft, FiArrowDown } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom'
+import { FiArrowLeft } from 'react-icons/fi';
 import './styles.css'
 import logo from '../../assets/logo.png'
 
@@ -17,8 +17,9 @@ export default function Profile(){
 
     function activeRepo(e) {
         e.preventDefault();
-        let activated = e.target.name
-        if (isActivated == activated) {
+        
+        let activated = e.target.dataset.name
+        if (isActivated === activated) {
             activated = ''
         }
         setIsActivated(activated)
@@ -30,7 +31,7 @@ export default function Profile(){
         <div className="profile-container">
 
             <header>
-                <img className="logo" src={logo}/>
+                <img alt="Logo Perfil Github" className="logo" src={logo}/>
                 <button onClick={handleBack} type="button">
                     <FiArrowLeft size={30} color="#0000ff" />
                 </button>
@@ -38,7 +39,7 @@ export default function Profile(){
 
             <div className="content">
                 <div className="col-1">
-                    <img className="image" src={image}/>
+                    <img alt="User Profile" className="image" src={image}/>
                     <h2>{profile.name}</h2>
                 </div>
                 <div className="col-2">
@@ -58,12 +59,13 @@ export default function Profile(){
             </div>  
 
             <div className="repos">
+                <h2>Repositórios do usuário</h2>
                 <ul>
                     {profile.repos.map(repo=>(
                     <li key={repo.name}>                    
-                        <h3 data-url={repo.commits}>{repo.name}</h3>
-                        <button name={repo.name} onClick={activeRepo}>R</button>
-                        { isActivated == repo.name && (
+                        <h3><a href="/" data-name={repo.name} onClick={activeRepo}>{repo.name}</a></h3>
+                        <button data-name={repo.name} onClick={activeRepo}>R</button>
+                        { isActivated === repo.name && (
                             <div className="repo-details">
                                 <div className="col-2">                                    
                                     <p><strong>Repositório:</strong></p>
@@ -75,7 +77,7 @@ export default function Profile(){
                                 </div>
                                 
                                 <div className="col-3">                                    
-                                    <p><a href={repo.link} target="_blank">{repo.link}</a></p>
+                                    <p><a href={repo.link} target="_blank" rel="noopener noreferrer">{repo.link}</a></p>
                                     <p>{repo.date || '-'}</p>
                                     <p>{repo.forks || '-'}</p>
                                     <p>{repo.star || '-'}</p>

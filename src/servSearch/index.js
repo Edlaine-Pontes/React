@@ -10,15 +10,13 @@ function formatDate(inputDate) {
 }
 
 
-const getUser = async function(user){
+export default async function(user){
     const url = `http://api.github.com/users/${user}`
     
     
     try{
         const resp = await http.get(url)
         const repos = await http.get(resp.data.repos_url)
-        const commit = await http.get
-
        
         const reposDetails = []
 
@@ -50,15 +48,4 @@ const getUser = async function(user){
     } catch(err){
         return null
     }
-}
-
-
-const getCommit = async function(url){
-    console.log('pega os commits');
-    console.log(url);
-}
-
-export {
-    getUser,
-    getCommit,
 }
